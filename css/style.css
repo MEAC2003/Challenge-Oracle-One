@@ -1,0 +1,561 @@
+/* Estilos generales */
+body {
+  font-family: 'Inter';
+  background-color: #E5E5E5;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Animaciones */
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-620px);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInLeft2 {
+  from {
+    transform: translateX(-180px);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInLeft3 {
+  from {
+    transform: translateX(-1200px);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateY(-1000px);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+/* Header */
+header {
+  padding: 2.1rem;
+  margin-left: -0.8rem;
+  height: 0;
+}
+
+.logo {
+  animation: slideInLeft2 1s ease-in 0s both;
+}
+
+
+/* Encriptar y desencriptar */
+
+.txtaIngresarT {
+  color: #0A3871;
+  width: 85%;
+  height: 350px;
+  margin-top: 5rem;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  resize: none;
+  border: none;
+  /* border-radius: 20px; */
+  background-color: #E5E5E5;
+  outline: none;
+  animation: slideInLeft 1s ease-in 1s both;
+}
+
+.txtaIngresarT::placeholder {
+  color: #0A3871;
+}
+
+.exclamation {
+  display: flex;
+  align-items: center;
+  padding: 0px;
+  gap: 8px;
+  margin-top: 4rem;
+  animation: slideInLeft 1s ease-in 1s both;
+}
+
+.alertaMA {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  margin-top: 16px;
+  color: #495057;
+  opacity: 0.8;
+}
+
+.botonesED {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  animation: slideInLeft3 1.6s ease-in 2s both;
+}
+
+.btnEncriptar {
+  width: 300px;
+  height: 67px;
+  background: #0A3871;
+  border-radius: 24px;
+  color: #f3f5fc;
+  cursor: pointer;
+  transition: 900ms all;
+  padding: 16px;
+}
+
+.btnEncriptar:hover {
+  background: #554d7e;
+  transform: scale(1.07);
+  color: #ffffff;
+}
+
+.btnDesencriptar {
+  width: 300px;
+  height: 67px;
+  background: #D8DFE8;
+  border: 1px solid #0A3871;
+  border-radius: 24px;
+  color: #034ba2;
+  cursor: pointer;
+  transition: 900ms all;
+  padding: 16px;
+}
+
+.btnDesencriptar:hover {
+  background: #ffffff;
+  transform: scale(1.07);
+}
+
+.fondoED {
+  float: left;
+  width: 76%;
+  margin-left: 110px;
+  height: 100%;
+  margin-bottom: 150px;
+  background: #FFFFFF;
+  box-shadow: 0px 18px 32px -8px #645d5d;
+  /* x, y, difuminación, hasta donde quieres que la sombra llegue,color */
+  border-radius: 32px;
+  animation: slideInRight 1.6s ease-in 2s both;
+}
+
+.imgMunieco {
+  display: none;
+}
+
+.seccionME {
+  margin-left: 7%;
+  margin-right: 5%;
+  margin-top: 8%;
+}
+
+.seccionME h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 120%;
+  text-align: center;
+  color: #343A40;
+  flex: none;
+}
+
+.seccionME p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  color: #495057;
+  flex: none;
+}
+
+.imgMunieco {
+  display: block;
+  margin: auto;
+  padding-top: 90px;
+  width: 80%;
+}
+
+.ocultarMunieco {
+  display: none;
+}
+
+.ocultarMensaje {
+  visibility: hidden;
+}
+
+.txtaEnDes {
+  display: flex;
+  width: 90%;
+  height: 500px;
+  margin-top: -140px;
+  margin-left: 1.2rem;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 150%;
+  color: #495057;
+  resize: none;
+  border: none;
+  outline: none;
+}
+
+.btnCopiar {
+  display: flex;
+  width: 70%;
+  height: 67px;
+  justify-content: center;
+  margin: auto;
+  margin-bottom: -122px;
+  margin-top: 28px;
+  border: 1px solid #0A3871;
+  border-radius: 24px;
+  color: #0A3871;
+  cursor: pointer;
+  /* transition-property: transform;
+  transition-duration: 1s;
+  transition-timing-function: ease;
+  transition-delay: 0s; */
+  transition: transform 1s ease 0s;
+}
+
+.btnCopiar:hover {
+  background: #e9e9f0;
+  transform: translateY(-16px);
+}
+
+/* Pie de pagina */
+
+footer {
+  text-align: center;
+  margin-top: auto;
+  background: linear-gradient(20deg, rgb(137, 137, 246), #0A3871, rgb(63, 63, 177), rgb(40, 40, 136));
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+}
+
+
+.conteiner-foot {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: center;
+}
+
+.copyright {
+  color: white;
+  font-size: 13px;
+  margin-top: 23px;
+}
+
+a {
+  margin-left: -3px;
+  width: 38px;
+  height: 38px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: all 0.2s ease-in;
+  margin-top: 9.2px;
+}
+
+a:hover {
+  background-color: white;
+}
+
+i {
+  margin-top: -20px;
+  color: white;
+  font-size: 2.5rem;
+  transition: all 0.2s ease-in;
+}
+
+a:hover i {
+  color: black;
+}
+
+/* Alertas */
+.error {
+  width: 22%;
+  height: 50px;
+  margin-top: -67px;
+  margin-left: 40%;
+  visibility: hidden;
+}
+
+.exito {
+  width: 22%;
+  height: 50px;
+  margin-top: -220px;
+  margin-left: 40%;
+  visibility: hidden;
+}
+
+.ocultar-error{
+  visibility: hidden;
+}
+
+.ima-exito,
+.ima-error {
+  width: 9%;
+}
+
+.letra-alert {
+  font-size: 12px;
+}
+
+/* Responsive */
+@media screen and (max-width: 1199px) {
+
+  /* Animacion */
+  @keyframes slideInLeft4 {
+    from {
+      transform: translateX(-1200px);
+    }
+
+    to {
+      transform: translateX(0);
+    }
+  }
+
+  /*--------------------- */
+  header {
+    padding: 2.1rem;
+    margin-left: -4rem;
+    height: 90px;
+  }
+
+  .columna2 {
+    max-height: 225px;
+  }
+
+  .txtaIngresarT {
+    margin-top: 2rem;
+    height: 180px;
+    width: 100%;
+    animation: slideInLeft 1.5s ease-in 1s both;
+  }
+
+  .exclamation {
+    margin-top: 0rem;
+    animation: slideInLeft 1.5s ease-in 1s both;
+  }
+
+  .botonesED {
+    justify-content: center;
+    animation: slideInLeft4 2s ease-in 1.5s both;
+  }
+
+  .btnEncriptar,
+  .btnDesencriptar {
+    width: 300px;
+    height: 60px;
+    padding: 0;
+  }
+
+  .fondoED {
+    width: 100%;
+    margin-left: 0;
+    height: 85%;
+    margin-top: 19px;
+    animation: slideInLeft4 2s ease-in 1.5s both;
+  }
+
+  .seccionME {
+    margin: 0;
+    padding-top: 60px;
+  }
+
+  .imgMunieco {
+    display: none;
+  }
+
+  .txtaEnDes {
+    height: 100px;
+    margin-top: -125px;
+    margin-left: 2.25rem;
+    font-size: 23px;
+  }
+
+  .btnCopiar {
+    width: 50%;
+    height: 50px;
+    margin-top: 22px;
+    transition: transform 1s ease 0s;
+  }
+
+  .btnCopiar:hover {
+    transform: translateY(-10px);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .txtaIngresarT {
+    font-size: 26.8px;
+  }
+
+  .botonesED {
+    flex-direction: column;
+    align-items: center;
+    gap: 13px;
+  }
+
+  .btnEncriptar,
+  .btnDesencriptar {
+    width: 290px;
+    height: 54px;
+    padding: 0;
+  }
+
+  .txtaEnDes {
+    margin-left: 1.6rem;
+  }
+}
+
+@media screen and (max-width: 1399px) {
+  .txtaIngresarT {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 400px) and (max-height: 740px) {
+  .txtaIngresarT {
+    margin-top: 1rem;
+    height: 160px;
+  }
+
+  .fondoED {
+    height: 85%;
+  }
+
+  .seccionME {
+    padding-top: 17%;
+  }
+
+}
+
+@media screen and (max-width: 382px) {
+  .seccionME {
+    padding-top: 11.5%;
+  }
+
+  .txtaEnDes {
+    margin-left: 1.25rem;
+    font-size: 19px;
+  }
+}
+
+
+@media screen and (max-width:417px) {
+
+  .txtaEnDes {
+    height: 110px;
+    margin-top: -155px;
+    margin-left: 1.25rem;
+  }
+
+  .btnCopiar {
+    height: 50px;
+    margin-top: 13px;
+  }
+
+}
+
+@media screen and (max-width: 545px) {
+  .copyright {
+    width: 90%;
+    margin-left: 20px;
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 487px) {
+  .copyright {
+    width: 85%;
+    margin-left: 30px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .conteiner-foot {
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+  }
+
+
+  a {
+    width: 30px;
+    height: 33px;
+    margin-bottom: 10px;
+    margin-top: -5px;
+  }
+
+  i {
+    font-size: 2.2rem;
+  }
+
+  .letra-alert {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 365px) {
+  .copyright {
+    width: 83%;
+    margin-left: 25px;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+
+  .error,
+  .exito {
+    width: 20%;
+    margin-left: 35%;
+  }
+}
+
+@media screen and (max-width: 1296px) {
+  .error,
+  .exito {
+    width: 30%;
+    margin-left: 35%;
+  }
+
+  .letra-alert {
+    text-align: center;
+  }
+}
+
+
+@media screen and (max-width: 540px) {
+
+  .error,
+  .exito {
+    width: 55%;
+    margin-left: 35%;
+  }
+
+  .letra-alert {
+    text-align: center;
+    font-size: 10px;
+  }
+}
