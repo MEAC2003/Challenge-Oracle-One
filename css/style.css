@@ -48,6 +48,11 @@ body {
   }
 }
 
+/* .columna1,
+.columna2 {
+  border: 2px solid #034ba2;
+} */
+
 /* Header */
 header {
   padding: 2.1rem;
@@ -308,7 +313,7 @@ a:hover i {
   visibility: hidden;
 }
 
-.ocultar-error{
+.ocultar-error {
   visibility: hidden;
 }
 
@@ -429,10 +434,120 @@ a:hover i {
   }
 }
 
+@media screen and (min-width: 1500px) {
+
+  .error,
+  .exito {
+    width: 20%;
+    margin-left: 35%;
+  }
+}
+
 @media screen and (max-width: 1399px) {
   .txtaIngresarT {
     width: 100%;
   }
+}
+
+@media screen and (max-width: 1296px) {
+
+  .error,
+  .exito {
+    width: 30%;
+    margin-left: 35%;
+  }
+
+  .letra-alert {
+    text-align: center;
+  }
+}
+
+@media screen and (min-height: 690px) and (max-height: 795px) and (min-width: 1200px){
+  .txtaIngresarT {
+    height: 330px;
+  }
+
+  .fondoED{
+    height: 97%;
+  }
+
+  .txtaEnDes {
+    height: 475px;
+  }
+
+  .btnCopiar {
+    margin-bottom: -115px;
+    margin-top: 50px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .conteiner-foot {
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+  }
+
+
+  a {
+    width: 30px;
+    height: 33px;
+    margin-bottom: 10px;
+    margin-top: -5px;
+  }
+
+  i {
+    font-size: 2.2rem;
+  }
+
+  .letra-alert {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 545px) {
+  .copyright {
+    width: 90%;
+    margin-left: 20px;
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+
+  .error,
+  .exito {
+    width: 55%;
+    margin-left: 35%;
+  }
+
+  .letra-alert {
+    text-align: center;
+    font-size: 10px;
+  }
+}
+
+
+@media screen and (max-width: 487px) {
+  .copyright {
+    width: 85%;
+    margin-left: 30px;
+  }
+}
+
+@media screen and (max-width:417px) {
+
+  .txtaEnDes {
+    height: 110px;
+    margin-top: -155px;
+    margin-left: 1.25rem;
+  }
+
+  .btnCopiar {
+    height: 50px;
+    margin-top: 13px;
+  }
+
 }
 
 @media screen and (max-width: 400px) and (max-height: 740px) {
@@ -462,100 +577,9 @@ a:hover i {
   }
 }
 
-
-@media screen and (max-width:417px) {
-
-  .txtaEnDes {
-    height: 110px;
-    margin-top: -155px;
-    margin-left: 1.25rem;
-  }
-
-  .btnCopiar {
-    height: 50px;
-    margin-top: 13px;
-  }
-
-}
-
-@media screen and (max-width: 545px) {
-  .copyright {
-    width: 90%;
-    margin-left: 20px;
-    font-size: 12px;
-  }
-}
-
-@media screen and (max-width: 487px) {
-  .copyright {
-    width: 85%;
-    margin-left: 30px;
-  }
-}
-
-@media screen and (max-width: 650px) {
-  .conteiner-foot {
-    flex-direction: column;
-    align-items: center;
-    gap: 0;
-  }
-
-
-  a {
-    width: 30px;
-    height: 33px;
-    margin-bottom: 10px;
-    margin-top: -5px;
-  }
-
-  i {
-    font-size: 2.2rem;
-  }
-
-  .letra-alert {
-    font-size: 10px;
-  }
-}
-
 @media screen and (max-width: 365px) {
   .copyright {
     width: 83%;
     margin-left: 25px;
-  }
-}
-
-@media screen and (min-width: 1500px) {
-
-  .error,
-  .exito {
-    width: 20%;
-    margin-left: 35%;
-  }
-}
-
-@media screen and (max-width: 1296px) {
-  .error,
-  .exito {
-    width: 30%;
-    margin-left: 35%;
-  }
-
-  .letra-alert {
-    text-align: center;
-  }
-}
-
-
-@media screen and (max-width: 540px) {
-
-  .error,
-  .exito {
-    width: 55%;
-    margin-left: 35%;
-  }
-
-  .letra-alert {
-    text-align: center;
-    font-size: 10px;
   }
 }
