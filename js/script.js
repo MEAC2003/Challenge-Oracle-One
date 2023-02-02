@@ -6,16 +6,16 @@ const copiar = document.getElementById('copiar');
 const exito = document.getElementById('alert1');
 const encriptar1 = document.getElementById('btnEncriptar');
 const error = document.getElementById('alert2');
-const error2= document.getElementById('alert3');
-const error3= document.getElementById('alert4');
+const error2 = document.getElementById('alert3');
+const error3 = document.getElementById('alert4');
 const acentos = /[ÁÉÍÓÚÑáéíóúñàèìòù]/;
 const mayusculas = /[A-Z]/
 
 const encriptacion = texto => {
     return texto
-        .replace(/a/g, "ai")
         .replace(/e/g, "enter")
         .replace(/i/g, "imes")
+        .replace(/a/g, "ai")
         .replace(/o/g, "ober")
         .replace(/u/g, "ufat")
 }
