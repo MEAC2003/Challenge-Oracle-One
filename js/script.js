@@ -44,6 +44,7 @@ function verificarAcento(texto) {
     return false;
 }
 
+let abc;
 
 function verificarMayus(texto) {
     let letras = mayusculas.test(texto);
