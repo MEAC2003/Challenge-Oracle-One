@@ -462,7 +462,7 @@ a:hover i {
   }
 }
 
-@media screen and (min-height: 690px) and (max-height: 795px) and (min-width: 1200px){
+@media screen and (min-height: 600px) and (max-height: 795px) and (min-width: 1200px){
   .txtaIngresarT {
     height: 330px;
   }
