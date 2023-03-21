@@ -1,7 +1,7 @@
 /* Estilos generales */
 body {
   font-family: 'Inter';
-  background-color: #E5E5E5;
+  background-color: #F3F5FC;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -78,7 +78,7 @@ header {
   resize: none;
   border: none;
   /* border-radius: 20px; */
-  background-color: #E5E5E5;
+  background-color: #F3F5FC;
   outline: none;
   animation: slideInLeft 1s ease-in 1s both;
 }
